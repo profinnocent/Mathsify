@@ -1,0 +1,157 @@
+:root{
+    --wyte: #fff;
+    --offwyte: #efefef;
+    --black: #000;
+    --lytblack: #555555;
+    --acent: rgb(240, 173, 49);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 82%;
+    margin-left: 10px;
+}
+
+main nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--offwyte);
+    border-radius: 10px;
+    /* height: 100px; */
+
+}
+
+main nav .title{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    
+}
+
+main nav .title h1{
+    /* text-align: center; */
+}
+
+main nav .others{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+main nav .others .searchbox{
+    display: flex;
+    border: 2px solid;
+    padding: 0 5px;
+    border-radius: 15px;
+    background-color: var(--wyte);
+    height: 30px;
+}
+
+main nav .others .searchbox input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+main nav .others .searchbox img{
+    width: 25px;
+    height: 25px;
+}
+
+main nav .others .notify{
+    display: flex;
+    align-items: center;
+}
+
+main nav .others .notify .inbox{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+main nav .others .notify .avatar{
+    width: 50px;
+    height: 50px;
+}
+
+main nav .others .notify .hanburger{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: none;
+}
+
+main .examarea{
+    background-color: var(--offwyte);
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 80%;
+    padding: 20px;
+}
+
+/* ================================================= */
+
+aside{
+    height: 100%;
+    width: 18%;
+    background-color: coral;
+    padding: 15px;
+    background-color: var(--offwyte);
+    border-radius: 10px;
+
+}
+
+aside .logo{
+    margin-bottom: 30px;
+}
+
+aside .logo img{
+    border-radius: 25%;
+    width: 70px;
+    height: 70px;
+
+}
+
+aside .menudiv ul li{
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--wyte);
+    border-radius: 5px;
+}
+
+aside .menudiv ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+/* ==================================================== */
+/* Media Query */
+@media (max-width:567px) {
+    body{
+        back
+    }
+}
