@@ -111,6 +111,14 @@ main .examarea{
     padding: 20px;
 }
 
+.examarea .qbox{
+    margin-bottom: 20px;
+}
+
+.examarea .qbox h3, .examarea .qbox p{
+    margin-bottom: 5px;
+}
+
 /* ================================================= */
 
 aside{
@@ -150,8 +158,39 @@ aside .menudiv ul li a{
 
 /* ==================================================== */
 /* Media Query */
-@media (max-width:567px) {
+@media screen and (max-width:567px) {
     body{
-        back
+        background-color: aqua;
+    }
+
+    main nav .others .searchbox{
+        display: none
+    }
+
+    main nav .others .notify .inbox {
+        display: none
+    }
+
+    main nav .others .notify .avatar {
+        display: none
+    }
+
+    main nav .others .notify .hanburger {
+        display: block
+    }
+
+    main nav .others:hover .avatar {
+        width: 50%;
+        transform: translateX(100px);
+
+    }
+
+    main nav .others{
+        justify-content:flex-end;
+    }
+
+    aside{
+        width: 0;
+        transform: translateX(-100px);
     }
 }
