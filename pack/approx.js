@@ -192,10 +192,10 @@ function inputMarks(iArr, ansArr, imgArr){
             console.log(iArr[1].value, ans);
 
             if(iArr[i].value == ans){
-                imgArr[i].src = './images/marksgreencircle.png';
+                imgArr[i].src = '../images/marksgreencircle.png';
             }
             else{
-                imgArr[i].src = './images/marksredcircle.png';
+                imgArr[i].src = '../images/marksredcircle.png';
             }
 
         }
